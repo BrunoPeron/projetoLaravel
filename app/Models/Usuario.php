@@ -7,5 +7,12 @@ use Illuminate\Database\Eloquent\Model;
 
 class Usuario extends Model
 {
-    //use HasFactory;
+    // use HasFactory;
+    public $timestamps = false;
+
+    protected $fillable = array(
+        'name',
+        'login',
+        'senha'
+    );
 }

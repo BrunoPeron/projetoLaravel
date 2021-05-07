@@ -2,10 +2,9 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Usuario;
 use Illuminate\Http\Request;
 
-class UsuarioController extends Controller
+class UsersController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -35,8 +34,7 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        //file_put_contents('/home/bruno/projeto/teste.json', $request);
-        return Usuario::create($request->all());
+        //
     }
 
     /**
